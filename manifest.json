@@ -1,0 +1,12 @@
+{
+	"name":"BOT FOR RETAIL",
+	"version": "0.1",
+	"manifest_version":2,
+	"content_scripts":[
+		{
+			"matches":["https://retailsat.com/*", "https://www.instagram.com/*"],
+			"js":["js/bot.js", "js/lib/jquery-3.2.1.min.js", "js/inst.js"],
+			"run_at":"document_end"
+		}
+	]
+}
